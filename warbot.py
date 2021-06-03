@@ -200,7 +200,7 @@ async def song(client, message):
 @Warbot.on_message(filters.command("start"))
 async def start(client, message):
    if message.chat.type == 'private':
-       await Jebot.send_message(
+       await Warbot.send_message(
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm a Song Downloader Bot. A bot by @camila_support.
 
