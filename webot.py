@@ -212,7 +212,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/camila_support")
+                                            "Support Group", url="https://t.me/camila_support")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
