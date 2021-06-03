@@ -1,1 +1,1 @@
-worker: python3 warbot.py
+worker: python3 webot.py
