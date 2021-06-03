@@ -239,7 +239,7 @@ Hit help button to find out more about how to use me</b>""",
 @Webot.on_message(filters.command("help"))
 async def help(client, message):
     if message.chat.type == 'private':   
-        await Jebot.send_message(
+        await Webot.send_message(
                chat_id=message.chat.id,
                text="""<b>Send a song name to download song
 
@@ -265,7 +265,7 @@ print(
     """
 Bot Started!
 
-Join @camila_support
+Join @camilla_support
 """
 )
 
