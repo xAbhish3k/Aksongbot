@@ -1,5 +1,5 @@
 import asyncio
-import war
+import warbot
 import sys
 import time
 from youtubesearchpython import SearchVideos
