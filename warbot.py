@@ -36,7 +36,7 @@ async def song(client, message):
     cap = "@WarBotZ"
     url = message.text
     rkp = await message.reply("Processing...")
-    search = SearchVideos(url, offset=1, mode="war", max_results=1)
+    search = SearchVideos(url, offset=1, mode="warbot", max_results=1)
     test = search.result()
     p =warbot.loads(test)
     q = p.get("search_result")
@@ -120,9 +120,9 @@ async def song(client, message):
     rkp = await message.reply("Processing...")
     if not url:
         await rkp.edit("**What's the song you want?**\nUsage`/song <song name>`")
-    search = SearchVideos(url, offset=1, mode="war", max_results=1)
+    search = SearchVideos(url, offset=1, mode="warbot", max_results=1)
     test = search.result()
-    p = json.loads(test)
+    p = warbot.loads(test)
     q = p.get("search_result")
     try:
         url = q[0]["link"]
